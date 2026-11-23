@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #130f29;
+  --panel: #211947;
+  --field: #17132f;
+  --text: #f5f3ff;
+  --muted: #c8c1df;
+  --accent: #a78bfa;
+  --accent-hover: #8b5cf6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top, rgb(88 101 242 / 10%), transparent 26rem),
+    var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+form,
+article {
+  border: 1px solid rgb(255 255 255 / 6%);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 16%);
+}
+
+form input:focus,
+form select:focus {
+  box-shadow: 0 0 0 3px rgb(88 101 242 / 14%);
+}
+
+form button {
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+form button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
