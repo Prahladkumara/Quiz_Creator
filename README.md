@@ -15,7 +15,6 @@ A Next.js and Firebase application for creating and saving multiple-choice quiz 
 - Next.js
 - React
 - Firebase Realtime Database
-- Tailwind CSS
 
 ## Run locally
 
@@ -27,3 +26,4 @@ npm run dev
 Open `http://localhost:3000/quiz`.
 
 Configure Firebase with `NEXT_PUBLIC_FIREBASE_*` environment variables.
+
